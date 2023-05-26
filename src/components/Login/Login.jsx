@@ -69,7 +69,6 @@ export default function Login({getToken}) {
           className="form-control my-1"
           name="email"
         />
-        <div className="text-danger">error</div>
       </div>
       <div>
         <label htmlFor="passeord"> Password</label>
@@ -79,7 +78,6 @@ export default function Login({getToken}) {
           name="password"
           onChange={handelChange}
         />
-        <div className="text-danger">error</div>
       </div>
       {errorMsg ? <div className="alert alert-danger">{errorMsg}</div> : ""}
       <button className="btn btn-info float my-2 " type="submit">

@@ -82,7 +82,6 @@ export default function Register() {
               className="form-control my-1"
               name="last_name"
             />
-            <div className="text-danger">error</div>
           </div>
           <div>
             <label htmlFor="age"> age</label>
@@ -92,7 +91,6 @@ export default function Register() {
               className="form-control my-1"
               name="age"
             />
-            <div className="text-danger">error</div>
           </div>
           <div>
             <label htmlFor="email"> Email</label>
@@ -102,7 +100,6 @@ export default function Register() {
               className="form-control my-1"
               name="email"
             />
-            <div className="text-danger">error</div>
           </div>
           <div>
             <label htmlFor="passeord"> Password</label>
@@ -112,7 +109,6 @@ export default function Register() {
               name="password"
               onChange={handelChange}
             />
-            <div className="text-danger">error</div>
           </div>
           {errorMsg ? <div className="alert alert-danger">{errorMsg}</div> : ""}
           <button className="btn btn-info float my-2 " type="submit">
